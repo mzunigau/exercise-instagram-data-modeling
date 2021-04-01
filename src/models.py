@@ -11,10 +11,9 @@ from eralchemy import render_er
 Base = declarative_base()
 
 class MyEnum(enum.Enum):
-    one = 1
-    two = 2
-    three = 3
-
+    IMAGES = 'jpg'
+    VIDEO = 'mp4'
+    
 class User(Base):
     __tablename__ = 'user'    
     id = Column(Integer, primary_key=True)
